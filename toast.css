@@ -25,9 +25,6 @@
 	margin: 0;
 	padding: 0;
 	position: relative;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
 }
 
 /*-----------------------------------*\
@@ -36,53 +33,65 @@
 
 .container {
 	/* Whatever you want. They’re your oats. */
-	max-width: 960px;
+	max-width: 940px;
 	margin: 0 auto;
-	padding: 0 30px;
-	padding: 0 1.5rem;
+	padding: 0 10px;
+	padding: 0 0.7142857143rem;
 }
 
 .grid {
-	margin-left: -3%;
+	margin-left: -2.12846349%;
 	max-width: 105%;
 }
 
-.unit {
+.container .column, .container .columns {
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
 	vertical-align: top;
-	margin-left: 3%;
+	margin-left: 2.08408144%;
 	margin-right: -.25em;
 	/* Clearfix */
 	overflow: hidden;
 	*overflow: visible;
 }
 
-	.unit.demo {
-		background-color: #fff8eb;
-		height: 48px;
-		height: 3rem;
-		margin-bottom: 24px;
-		margin-bottom: 1.5rem;
-	}
+.one.column,
+.one.columns                     { width: 4.1666847%;  }
+.two.columns                     { width: 10.41671176%; }
+.three.columns                   { width: 16.66673881%; }
+.four.columns                    { width: 22.91676587%; }
+.five.columns                    { width: 29.16679292%; }
+.six.columns                     { width: 35.41681998%; }
+.seven.columns                   { width: 41.66684703%; }
+.eight.columns                   { width: 47.91687408%; }
+.nine.columns                    { width: 54.16690114%; }
+.ten.columns                     { width: 60.41692819%; }
+.eleven.columns                  { width: 66.66695525%; }
+.twelve.columns                  { width: 72.9169823%; }
+.thirteen.columns                { width: 79.16700936%; }
+.fourteen.columns                { width: 85.41703641%; }
+.fifteen.columns                 { width: 91.66706347%; }
+.sixteen.columns                 { width: 97.91709052%; }
 
-.span-grid {
-	width: 97%;
-}
+.one-third.column                { width: 31.25013527%; }
+.two-thirds.column               { width: 64.5836129%; }
 
-.one-of-two { width: 47%; }
-
-.one-of-three { width: 30.36%; }
-.two-of-three { width: 63.666666666%; }
-
-.one-of-four { width: 22.05%; }
-.three-of-four { width: 72%; }
-
-.one-of-five { width: 17.07%; }
-.two-of-five { width: 37%; }
-.three-of-five { width: 57%; }
-.four-of-five { width: 77%; }
+.offset-by-one                   { padding-left: 6.25002705%;  }
+.offset-by-two                   { padding-left: 12.50005411%; }
+.offset-by-three                 { padding-left: 18.75008116%; }
+.offset-by-four                  { padding-left: 25.00010822%; }
+.offset-by-five                  { padding-left: 31.25013527%; }
+.offset-by-six                   { padding-left: 37.50016233%; }
+.offset-by-seven                 { padding-left: 43.75018938%; }
+.offset-by-eight                 { padding-left: 50.000021644%; }
+.offset-by-nine                  { padding-left: 56.25024349%; }
+.offset-by-ten                   { padding-left: 62.50027054%; }
+.offset-by-eleven                { padding-left: 68.7502976%; }
+.offset-by-twelve                { padding-left: 75.00032465%; }
+.offset-by-thirteen              { padding-left: 81.25035171%; }
+.offset-by-fourteen              { padding-left: 87.50037876%; }
+.offset-by-fifteen               { padding-left: 93.75040582%; }
 
 @media screen and (max-width: 650px) {
 	.grid {
@@ -90,51 +99,12 @@
 		max-width: none;
 	}
 
-	.unit {
+	.container .column, .container .columns {
 		width: auto;
 		margin-left: 0;
+    padding-left: 0;
 		display: block;
 	}
-}
-
-/*-----------------------------------*\
-	$TYPE
-
-	Works off the assumption of a 1.5
-	line height @ 20px. Again, change
-	as necessary.
-\*-----------------------------------*/
-
-p, .p, ul, ol, hr, table, form, pre,
-h1, .alpha, h2, .beta {
-	margin-bottom: 30px;
-	margin-bottom: 1.5rem;
-}
-
-h1, .alpha {
-	font-size: 60px;
-	font-size: 3rem;
-	font-weight: 700;
-	line-height: 1;
-}
-
-h2, .beta {
-	font-size: 30px;
-	font-size: 1.5rem;
-	font-weight: 400;
-	line-height: 2;
-}
-
-h3, .gamma {
-	font-size: 20px;
-	font-size: 1rem;
-	font-weight: 700;
-}
-
-hr {
-	border: none;
-	border-bottom: 1px solid rgba(0,0,0,.1);
-	margin-top: -1px;
 }
 
 /*-----------------------------------*\
@@ -142,11 +112,12 @@ hr {
 \*-----------------------------------*/
 
 html {
-	font: 125%/1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 87.5%;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 650px) {
 	html {
-		font-size: 100%;
+		font-size: 75%;
 	}
 }
