@@ -384,7 +384,8 @@
 		max-width: none;
 	}
 
-	.container .column, .container .columns {
+	.container .column, .container .columns,
+  .container .grid .columns .column, .container .grid .columns .columns {
 		width: auto;
 		margin-left: 0;
     padding-left: 0;
