@@ -8,17 +8,19 @@ didn't give me control over arbitrary markup.
 
 However I was already used to Skeleton and liked it's features and
 nomenclature.  Toast was a bit too simple since it didn't support 16
-columns nor nested columns.
+columns, offsets nor nested columns.
 
 The result is a grid system which is:
 
-- fluid - based on percentages not pixels (unlike Skeleton)
-- responsive - using Toast's simple responsiveness model since
+- fluid - based on percentages not pixels, unlike Skeleton
+- responsive - using Toast's simple responsiveness model -
 the need for Skeleton's more complex model is ameliorated by the
 fluidity
 - 16-column - using Skeleton's column naming and based on 960px width by
 default (can be changed by editing the CSS)
-- supports a single level of nested columns - no nested-nested columns
+- offsetable - supports offsetting by columns a la Skeleton - this
+conflicts with Toast's box-sizing which has been removed
+- nestable - supports a single level of nested columns - no nested-nested columns
 - does not support plurilization of one column ("one columns" is
 invalid)
 
