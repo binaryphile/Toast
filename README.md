@@ -14,13 +14,14 @@ The result is a grid system which is:
 
 - fluid - based on percentages not pixels, unlike Skeleton
 - responsive - using Toast's simple responsiveness model -
-the need for Skeleton's more complex model is ameliorated by the
+the need for Skeleton's more complex model is less needed because of the
 fluidity
 - 16-column - using Skeleton's column naming and based on 960px width by
 default (can be changed by editing the CSS)
-- offsetable - supports offsetting by columns a la Skeleton - this
+- offsettable - supports offsetting by columns a la Skeleton - this
 conflicts with Toast's box-sizing which has been removed
 - nestable - supports a single level of nested columns - no nested-nested columns
+  - nested columns only need an additional class on the first, not the last, to remove excess margin - use "leader" class rather than "alpha" (skeleton)
 - does not support plurilization of one column ("one columns" is
 invalid)
 
