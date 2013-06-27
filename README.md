@@ -23,7 +23,7 @@ default (can be changed by editing the CSS)
   - this conflicts with Toast's box-sizing which has been removed
   - note this means that you can't add borders to blocks since without Toast's box-sizing, they expand the box size and cause wrapping
 - nestable - supports a single level of nested columns - no nested-nested columns
-  - nested columns only need an additional class on the first div, not the last, to remove excess margin - use "leader" class rather than "alpha" (skeleton)
+  - nested columns only need an additional class on the first div, not the last, to remove excess margin - use "leader" class rather than "alpha"
 - does not support plurilization of one column ("one columns" is
 invalid)
 - has no styling other than base font-size (removes both Toast's and Skeleton's styling)
