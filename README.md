@@ -25,6 +25,8 @@ conflicts with Toast's box-sizing which has been removed
   - nested columns only need an additional class on the first, not the last, to remove excess margin - use "leader" class rather than "alpha" (skeleton)
 - does not support plurilization of one column ("one columns" is
 invalid)
+- has no styling other than base font-size (removes both Toast's and Skeleton's styling)
+- has Toast's minimal css reset
 
 To learn more about Toast, go to <http://daneden.me/toast>.
 
