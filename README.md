@@ -21,7 +21,7 @@ fluidity
 default (can be changed by editing the CSS)
 - offsettable - supports offsetting by columns a la Skeleton
   - this conflicts with Toast's box-sizing which has been removed
-  - note this means that you can't add borders nor padding to blocks since without Toast's box-sizing, they expand the box size and cause wrapping
+  - note this means that you can't add bordersto blocks since without Toast's box-sizing, they expand the box size and cause wrapping
 - nestable - supports a single level of nested columns - no nested-nested columns
   - nested columns only need an additional class on the first div, not the last, to remove excess margin - use "leader" class rather than "alpha" (skeleton)
 - does not support plurilization of one column ("one columns" is
