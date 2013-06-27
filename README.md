@@ -12,17 +12,18 @@ columns, offsets nor nested columns.
 
 The result is a grid system which is:
 
+- requires no markup/css for clearing of floats
 - fluid - based on percentages not pixels, unlike Skeleton
 - responsive - using Toast's simple responsiveness model -
 the need for Skeleton's more complex model is less needed because of the
 fluidity
 - 16-column - using Skeleton's column naming and based on 960px width by
 default (can be changed by editing the CSS)
-- offsettable - supports offsetting by columns a la Skeleton - this
-conflicts with Toast's box-sizing which has been removed
+- offsettable - supports offsetting by columns a la Skeleton
+  - this conflicts with Toast's box-sizing which has been removed
   - note this means that you can't add borders nor padding to blocks since without Toast's box-sizing, they expand the box size and cause wrapping
 - nestable - supports a single level of nested columns - no nested-nested columns
-  - nested columns only need an additional class on the first, not the last, to remove excess margin - use "leader" class rather than "alpha" (skeleton)
+  - nested columns only need an additional class on the first div, not the last, to remove excess margin - use "leader" class rather than "alpha" (skeleton)
 - does not support plurilization of one column ("one columns" is
 invalid)
 - has no styling other than base font-size (removes both Toast's and Skeleton's styling)
