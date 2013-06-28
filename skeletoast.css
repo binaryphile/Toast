@@ -92,7 +92,7 @@
 .offset-by-fifteen              { padding-left: 93.75040582%; }   /* 900px */
 
 .container .columns .columns.leader, .container .columns .column.leader { margin-left: 0; }
-
+.columns .column p, .columns .columns p { margin-right: .15em; }
                                                                                         /* @100px: */
 .two.columns .column, .two.columns .columns            { margin-left: 20%; }            /* 20px */
 .two.columns .one.column                               { width: 40%; }                  /* 40px */
