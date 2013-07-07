@@ -91,7 +91,7 @@
 .offset-by-fourteen             { padding-left: 87.50037876%; }   /* 840px */
 .offset-by-fifteen              { padding-left: 93.75040582%; }   /* 900px */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
 	.grid {
 		margin-left: 0;
 		max-width: none;
@@ -115,7 +115,7 @@ html {
   line-height: 1.5;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
 	html {
 		font-size: 75%;
 	}
